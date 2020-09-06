@@ -1,0 +1,63 @@
+<html>
+  <head>
+    
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body>
+
+  
+    <div id="loginarea" class="main">
+      <h3>Login</h3>
+      <input type="email" placeholder="Enter Email ID" id="loginwithemail" />
+      <input type="password" placeholder="Enter Password" id="loginwithpass" />
+  
+      <button onclick="login()">Login to Account</button><br/>
+      <button onclick="register()">Sign Up</button>
+    </div>
+  
+    <div id="divison_user" class="after_login">
+      
+      <div id="welcome_user_print"></div>
+      <h1>Patient Details</h1>
+      <input type="file" id="image"> <br/>
+      <img id="imageupload" /> <br/>
+       <br/>
+      <button onclick="uploadImage()">Upload Image</button><br/>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVu1wdmWvztAhahVvH_kt_H94Vou-Oyzo",
+    authDomain: "telemedapplication.firebaseapp.com",
+    databaseURL: "https://telemedapplication.firebaseio.com",
+    projectId: "telemedapplication",
+    storageBucket: "telemedapplication.appspot.com",
+    messagingSenderId: "773503889204",
+    appId: "1:773503889204:web:1e840f365640f53d14bf61",
+    measurementId: "G-MEPSB83ZT3"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+
+  
+</body>
+</html>
+
